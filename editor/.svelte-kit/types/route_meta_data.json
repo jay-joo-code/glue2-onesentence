@@ -1,0 +1,44 @@
+{
+	"/": [
+		"src/routes/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/api/email": [
+		"src/routes/api/email/+server.ts"
+	],
+	"/api/sentry-example": [
+		"src/routes/api/sentry-example/+server.ts"
+	],
+	"/chatrooms/[chatroomId]": [
+		"src/routes/chatrooms/[chatroomId]/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/driver-dashboard": [
+		"src/routes/driver-dashboard/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/error-test": [
+		"src/routes/+layout.ts"
+	],
+	"/privacy-policy": [
+		"src/routes/+layout.ts"
+	],
+	"/profile/my-reservations": [
+		"src/routes/profile/my-reservations/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/redirect": [
+		"src/routes/+layout.ts"
+	],
+	"/search": [
+		"src/routes/search/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/sentry-example": [
+		"src/routes/+layout.ts"
+	],
+	"/terms-conditions": [
+		"src/routes/+layout.ts"
+	]
+}
