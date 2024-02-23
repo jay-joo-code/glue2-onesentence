@@ -3,10 +3,9 @@
 	import { afterNavigate } from '$app/navigation';
 	import Auth from '$lib/components/glue/Auth.svelte';
 	import MobileDrawerContent from '$lib/components/glue/MobileDrawerContent.svelte';
-	import { APP_NAME, IS_BETA, PUBLIC_NAVS } from '$lib/glue/config';
+	import { APP_NAME, IS_BETA } from '$lib/glue/config';
 	import { currentUser } from '$lib/glue/pocketbase';
 	import { onMount } from 'svelte';
-	import StartDriveButtonModal from '../StartDriveButtonModal.svelte';
 	import FeedbackModal from './FeedbackModal.svelte';
 	import TrackWidth from './TrackWidth.svelte';
 	import './app.css';
@@ -61,7 +60,7 @@
 			<div bind:this={topAnchor} />
 
 			<!-- header -->
-			<div class="sticky top-0 z-30 flex w-full justify-center bg-base-100/95">
+			<div class="bg-base-100/95 sticky top-0 z-30 flex w-full justify-center">
 				<div class={`w-full max-w-4xl`}>
 					<div class="navbar px-4">
 						<!-- mobile nav: hamburger -->
@@ -88,9 +87,9 @@
 						<div>
 							<button>
 								<a href="/" class="btn-ghost btn px-1 text-2xl font-bold normal-case">
-									<p class="uppercase">{APP_NAME}</p>
+									<p class="">{APP_NAME}</p>
 									{#if IS_BETA}
-										<span class="mt-2 text-sm text-base-content/60">beta</span>
+										<span class="text-base-content/60 mt-2 text-sm">beta</span>
 									{/if}
 								</a>
 							</button>
@@ -108,7 +107,6 @@
 									{/if}
 								</div>
 							</div> -->
-							<StartDriveButtonModal />
 							<Auth />
 						</div>
 					</div>

@@ -3,7 +3,7 @@ import IconDriverWheel from '$lib/icons/glue/IconDriverWheel.svelte';
 import IconMessage from '$lib/icons/glue/IconMessage.svelte';
 import type { IPublicNav, IPrivateNav } from '$lib/types/glue/nav.type';
 
-export const APP_NAME = 'REVY';
+export const APP_NAME = 'OneSentence';
 export const PUBLIC_NAVS: IPublicNav[] = [
 	{
 		label: 'Home',
@@ -36,7 +36,7 @@ export const PRIVATE_NAVS: IPrivateNav[] = [
 	}
 ];
 export const IS_GOOGLE_AUTH_ONLY = true;
-export const IS_ENFORCE_CORNELL_EMAIL = true;
+export const IS_ENFORCE_CORNELL_EMAIL = false;
 export const IS_BETA = true;
 export const SENTRY_DSN_PUBLIC = '';
 export const ADMIN_EMAIL = 'contact@revycarpool.com';
